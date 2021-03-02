@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora IMC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+          <div class="container">
+            <div class="title"> Calculadora - IMC </div>
+            <div class="input">
+                <label>Nome:</label>
+                <input type="text" id='nome'>
+            </div>
+            <div class="input">
+                <label>Altura:</label>
+                <input type="range" id="altura" value="0" min="0" max="3" step="0.01">
+                <span id="spanAltura">0</span>
+            </div>
+            <div class="input">
+                <label>Peso:</label>
+                <input type="range" id="peso" value="0" min="0" max="300" step="0.01">
+                <span id="spanPeso">0</span>
+            </div>
+               
+            <button id='calcular'>Calcular</button>
+    
+            <div class="result" id='resultado'></div>
+          </div>
+        </main>
+        <script src="./imc.js"></script>
+        </body>
+</html>
